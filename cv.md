@@ -47,3 +47,23 @@ https://github.com/ElusiveWay/psdTemplate_to_html.git
     <img src ="https://sun9-58.userapi.com/cGjyoV1bTEtb2b487UeZ249s2Vb5gXtEyE-Oow/Ou7x5tLDTw8.jpg">
     <img src ="https://sun9-52.userapi.com/btv-BpIIvSqj7SVlUbVv_5vF5oQk7h2UyulO7Q/JxeAhoI0KsM.jpg">
   </details>  
+
+***  
+### Education 
+*Educational establishment*: Sukhoi State technical university of Gomel.  
+*Faculty*: Automation and Information Systems Faculty.  
+*Department*: Industrial Electronics.  
+*Education form*: Distant.  
+*Degree information*: Graduate (bachelor).  
+*Graduation year*: 2017.
+
+Books:
+* JavaScript. The Definitive Guide. Sixth Edition. David Flanagan. 2012.
+* HTML5 in easy steps. Second Edition. MikeMcGrath. 2017.
+* CSS3: The Missing Manual: David Sawyer McFarland.
+
+I have studied a lot of training videos on YouTube, for example, the advanced javascript course on the channel "loftblog".
+### English
+My english level is approximately pre-intermediate(A2).  
+University, music lyrics translation and series with subtitles.  
+I practice with Duolingo service.
