@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS & Git Basics (rsschool-cv-html)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Uladzislau Kaminski</h2>
+        <img onclick="cvApp.toggleShowImage(this,event)" width="240px" src="./me.jpg" alt="Its me">
+        <section>
+            <h3>Contact info</h3>
+            <span><i>City:</i> Minsk
+            <i>Mobile phone number:</i> +375(44) 733 74 77
+            <i>Active emails:</i></span>
+            <ul>
+                <li>lovenikol95@gmail.com</li>
+                <li>lovenikol95@outlook.com</li>
+            </ul>
+            <span><i>Github:</i> <a target="_blank" href="https://github.com/ElusiveWay">ElusiveWay</a>
+            <i>Discord:</i> elus#0715
+            <i>Telegram:</i> @elusiveWay</span>
+        </section>
+    </header>
+    <hr>
+    <section>
+        <h3>Summary</h3>
+        <span><p>My goal is to get a job like a junior frontend developer.
+        I have the ability to learn quickly and effectively. Hard discipline and patience.</p></span>
+    </section>
+    <section class="">
+        <h3>Skills</h3>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>ECMAScript6</li>
+            <li>SCSS Preprocessor</li>
+            <li>Webpack</li>
+            <li>JQuery</li>
+            <li>BEM methodology</li>
+            <li>Babel</li>
+            <li>Responsive, flexible layout</li>
+            <li>VSCode</li>
+            <li>Git\Github</li>
+            <li>Npm</li>
+            <li>Photoshop</li>
+        </ul>
+    </section>
+    <hr>
+    <section>
+        <h3>Code example</h3>
+        <a target="_blank" href="https://github.com/ElusiveWay/psdTemplate_to_html.git">Github link</a> 
+    </section>
+    <section>
+        <h3>Experience</h3>
+        <ul>
+            <li>I have practiced Javascript on codewars.</li>
+            <li><a onclick="cvApp.toggleShowImage(this,event)" src="./game.jpg" href="#">Html elements based mini-game, platformer.</a></li>
+            <li><a onclick="cvApp.toggleShowImage(this,event)" src="./gftm.jpg" href="#">Site for my friends, musicians.</a></li>
+        </ul>
+    </section>
+    <hr>
+    <section>
+        <h3>Education</h3>
+        <span><i>Educational establishment:</i> Sukhoi State technical university of Gomel.
+        <i>Faculty:</i> Automation and Information Systems Faculty.
+        <i>Department:</i> Industrial Electronics.
+        <i>Education form:</i> Distant.
+        <i>Degree information:</i> Graduate (bachelor).
+        <i>Graduation year:</i> 2017.
+        
+        Books:</span>
+        <ul>
+            <li>JavaScript. The Definitive Guide. Sixth Edition. David Flanagan. 2012.</li>
+            <li>HTML5 in easy steps. Second Edition. MikeMcGrath. 2017.</li>
+            <li>CSS3: The Missing Manual: David Sawyer McFarland.</li>
+        </ul>
+        <span>I have studied a lot of training videos on YouTube, for example, the advanced javascript course on the channel “loftblog”.</span>
+    </section>
+    <section>
+    <h3>English</h3>
+    <span>My english level is approximately pre-intermediate(A2).
+    University, music lyrics translation and series with subtitles.
+    I practice with Duolingo service.</span>
+    </section>
+    <hr>
+    <footer>
+        <span>RSSchool 2020</span>
+    </footer>
+    <div onclick="cvApp.toggleShowImage(this,event)" class="big-image-shower">
+        <img onclick="cvApp.toggleShowImage(this,event)" src="./me.jpg" class="big-image">
+    </div>
+    <script>
+        const cvApp = (function(){
+            const toggleShowImage = (obj,e)=>{
+                e.preventDefault();
+                e.stopPropagation();
+                if(obj.className == 'big-image') return;
+                if(obj.className == 'big-image-shower') {
+                    obj.style.display = 'none';
+                    return;
+                };
+                let el = document.getElementsByClassName('big-image-shower')[0];
+                el.children[0].src = obj.attributes.src.textContent;
+                el.style.display = "block";
+                console.log(el.childNodes[0])
+            }
+            return {toggleShowImage}
+        }());
+    </script>
+</body>
+</html>
